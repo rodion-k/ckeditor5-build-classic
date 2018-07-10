@@ -20,6 +20,9 @@ import ImageuploadPlugin from '@ckeditor/ckeditor5-image/src/imageupload';
 import LinkPlugin from '@ckeditor/ckeditor5-link/src/link';
 import ListPlugin from '@ckeditor/ckeditor5-list/src/list';
 import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
+import TablePlugin from '@ckeditor/ckeditor5-table/src/table';
+import TabletoolbarPlugin from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import AlignmentPlugin from '@ckeditor/ckeditor5-alignment/src/alignment';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -40,7 +43,10 @@ ClassicEditor.build = {
 		ImageuploadPlugin,
 		LinkPlugin,
 		ListPlugin,
-		ParagraphPlugin
+		ParagraphPlugin,
+		TablePlugin,
+		TabletoolbarPlugin,
+		AlignmentPlugin
 	],
 	config: {
 		toolbar: {
@@ -53,9 +59,11 @@ ClassicEditor.build = {
 				'bulletedList',
 				'numberedList',
 				'imageUpload',
+				'insertTable',
 				'blockQuote',
 				'undo',
-				'redo'
+				'redo',
+				'alignment'
 			]
 		},
 		image: {
@@ -66,6 +74,21 @@ ClassicEditor.build = {
 				'imageTextAlternative'
 			]
 		},
-		language: 'en'
+		language: 'ru',
+		table: {
+			toolbar: [
+				'tableColumn',
+				'tableRow',
+				'mergeTableCells'
+			]
+		},
+		alignment: {
+			options: [
+				'left',
+				'right',
+				'center',
+				'justify'
+			]
+		}
 	}
 };
