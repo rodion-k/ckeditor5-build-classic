@@ -15,6 +15,7 @@ const BabiliPlugin = require( 'babel-minify-webpack-plugin' );
 const buildConfig = require( './build-config' );
 
 module.exports = {
+	watch: true,
 	devtool: 'source-map',
 
 	entry: path.resolve( __dirname, 'src', 'ckeditor.js' ),

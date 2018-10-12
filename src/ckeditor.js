@@ -23,6 +23,7 @@ import ParagraphPlugin from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import TablePlugin from '@ckeditor/ckeditor5-table/src/table';
 import TabletoolbarPlugin from '@ckeditor/ckeditor5-table/src/tabletoolbar';
 import AlignmentPlugin from '@ckeditor/ckeditor5-alignment/src/alignment';
+import InsertImagePlugin from '/home/stanislav/source/pn/app/modules/kakvybrat-redactor/assets/ckeditor5/src/plugins/insertImage';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -46,7 +47,8 @@ ClassicEditor.build = {
 		ParagraphPlugin,
 		TablePlugin,
 		TabletoolbarPlugin,
-		AlignmentPlugin
+		AlignmentPlugin,
+		InsertImagePlugin
 	],
 	config: {
 		toolbar: {
@@ -63,7 +65,8 @@ ClassicEditor.build = {
 				'blockQuote',
 				'undo',
 				'redo',
-				'alignment'
+				'alignment',
+				'insertImage'
 			]
 		},
 		image: {

@@ -33,7 +33,8 @@ module.exports = {
 		'@ckeditor/ckeditor5-paragraph/src/paragraph',
 		'@ckeditor/ckeditor5-table/src/table',
 		'@ckeditor/ckeditor5-table/src/tabletoolbar',
-		'@ckeditor/ckeditor5-alignment/src/alignment'
+		'@ckeditor/ckeditor5-alignment/src/alignment',
+		__dirname + '/src/plugins/insertImage'
 	],
 
 	// Editor config.
@@ -52,7 +53,8 @@ module.exports = {
 				'blockQuote',
 				'undo',
 				'redo',
-				'alignment'
+				'alignment',
+				'insertImage',
 			]
 		},
 
